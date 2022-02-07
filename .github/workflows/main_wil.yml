@@ -4,9 +4,9 @@
 name: Build and deploy Node.js app to Azure Web App - wil
 
 on:
-  push:
+  pull request:
     branches:
-      - main
+      - dev
   workflow_dispatch:
 
 jobs:
@@ -26,7 +26,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'wil'
+          app-name: 'wilexo'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_93599A0157AE4A5787DE1B4A06B9B448 }}
           package: .
