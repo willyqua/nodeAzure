@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/3aa8067d-f2c2-4e49-b322-aee203a7ef88/resourceGroups/wil-ressource/providers/Microsoft.Web/sites/wil",
+    "appService.deploySubpath": "."
+}
